@@ -1,11 +1,19 @@
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: auto 1fr 2fr; /* Column widths */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Column widths. MOST OFTEN USED*/
+    /*grid-template-columns: auto 1fr 2fr; !* Column widths *!*/
     /*grid-template-columns: repeat(3, 1fr); !* Column widths *!*/
     /*grid-template-columns: 1fr 1fr 2fr; !* Column widths *!*/
     grid-template-rows: 1fr; /* Row heights */
     /*grid-template-rows: 1fr 2fr 3fr 5fr; !* Row heights *!*/
+
+    /*justify-items: stretch; !* Default *!*/
+    /*justify-items: start; !* Aligns items in a grid item, along the row axis at the start *!*/
+    /*justify-items: end; !* Aligns items in a grid item, along the row axis at the end *!*/
+
+    /*align-items: start; !* Aligns items in a grid item, along the column axis at the start. To preview, set grid-template-rows to 300px *!*/
+    /*align-items: end; !* Aligns items in a grid item, along the column axis at the end. To preview, set grid-template-rows to 300px *!*/
 }
 
 .zone {
